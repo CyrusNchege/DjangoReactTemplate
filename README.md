@@ -10,6 +10,7 @@ The template includes configurations for rendering React components within Djang
 - Python 3.x
 - Node.js and npm
 - Django 5.x
+- Docker
 
 ## Installation
 1. **Clone the repository:**
@@ -20,60 +21,24 @@ The template includes configurations for rendering React components within Djang
 
    ```
 
-2. **Backend Setup:**
-
-
-- This Setup is for when You do not want to use Docker,
-if you prefer Docker, there is a branch in this Repo for that.
-
-- Create a virtual environment and activate it(Depend on which platform you are in or package you use)
-
-
-   ```
-
-   python -m venv venv
-   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-
-   ```
-
-- Install the required Python packages:
-
-   ```
-   pip install -r requirements.txt
-   ```
-
-- Apply migrations:
-   ```
-   python manage.py migrate
-   ```
-
-- Start development Server
-   ```
-   python manage.py runserver
-   ```
-
-2. **Frontend Setup:**
-
-
+2. ** Setup Project:**
 
    ```
    cd frontend
-
-   ```
-
-- Install Npm Packages
-
-   ```
    npm install
    ```
 
-- Run Development Server
+   Run Docker
 
    ```
-   npm run dev
+   docker-compose up --build
+   ```
+   or 
+   ```
+   docker compose up --build
    ```
 
-
+   
 ## Usage
 
 You can now access the application by visiting `http://localhost:8000` in your browser.
